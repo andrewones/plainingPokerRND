@@ -12,9 +12,31 @@
     <div class="container body-content">
         @RenderBody()
     </div>
+    
+    
+    @*<script type="text/javascript">
+    var application;
+    $(document).ready(function () {
+        application.config = function () {
+            var appPath = '@Url.Content("~/")';
+            var rootApiUrl = '@(HtmlHelpers.GetBaseUrl() + "api/")';
+            var actionUrl = '@(Url.Action(string.Empty, string.Empty, null, Request.Url.Scheme))';
+
+
+            return {
+                appPath: appPath,
+                getApiUrl: getApiUrl,
+                actionUrl: actionUrl
+            }
+
+            function getApiUrl(name) {
+                return rootApiUrl + name;
+            }
+        }
+    });
+    </script>*@
 
     @Scripts.Render("~/bundles/app")
     @Scripts.Render("~/bundles/angular")
-    @*@Html.RenderPartial("_ApplicationData")*@
 </body>
 </html>
