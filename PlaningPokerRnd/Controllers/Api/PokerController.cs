@@ -19,6 +19,13 @@ namespace PlaningPokerRnd.Controllers.Api
         }
 
         [HttpPost]
+        public IHttpActionResult StartVoting()
+        {
+            
+            return Ok();
+        }
+
+        [HttpPost]
         public IHttpActionResult AddUser(UserModel userModel)
         {
             return Ok();
