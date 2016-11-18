@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('catalogApp', ['common.core', 'slick'])
-        .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){}])
-        .run(['$rootScope', '$location', '$http',  function ($rootScope, $location, $http) { }]);
+    angular.module('pokerApp', ['common.core'])
+        .config(['$routeProvider', function($routeProvider){}])
+        .run(['$rootScope', '$http',  function ($rootScope, $http) { }]);
 })();

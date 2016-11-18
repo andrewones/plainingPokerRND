@@ -977,12 +977,7 @@
     <Content Include="Scripts\Materialize\materialize.js" />
     <Content Include="Scripts\Materialize\materialize.min.js" />
     <Content Include="Scripts\PokerApp\app.js" />
-    <Content Include="Scripts\PokerApp\Controllers\Buyer\CatalogDetailsController.js" />
-    <Content Include="Scripts\PokerApp\Controllers\Buyer\CatalogListController.js" />
-    <Content Include="Scripts\PokerApp\Controllers\Vendor\CatalogDetailsController.js" />
-    <Content Include="Scripts\PokerApp\Directives\ng-file-upload\FileAPI.min.js" />
-    <Content Include="Scripts\PokerApp\Directives\ng-file-upload\ng-file-upload-shim.min.js" />
-    <Content Include="Scripts\PokerApp\Directives\ng-file-upload\ng-file-upload.min.js" />
+    <Content Include="Scripts\PokerApp\Controllers\planningPokerController.js" />
     <Content Include="Scripts\PokerApp\Modules\common.core.js" />
     <Content Include="Scripts\PokerApp\Services\ApiService.js" />
     <Content Include="Scripts\_references.js" />
@@ -1003,10 +998,11 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Scripts\version.json" />
-    <Content Include="Scripts\PokerApp\Directives\ng-file-upload\LICENSE" />
+    <Content Include="Scripts\PokerApp\Modules\angular-materialize.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\PokerApp\Directives\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
