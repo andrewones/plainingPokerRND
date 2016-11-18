@@ -6,7 +6,7 @@
         function ($scope, apiService) {
 
             function loadData() {
-                apiService.get(application.config().getApiUrl("Poker/Rooms/"), null,
+                apiService.get("http://localhost:59218/api/Poker/Rooms/", null,
                     loadCompleted,
                     loadFailed);
             }
