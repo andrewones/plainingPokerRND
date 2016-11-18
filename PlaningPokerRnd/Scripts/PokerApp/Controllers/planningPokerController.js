@@ -6,8 +6,23 @@
         function ($scope, apiService, $http) {
 
             
+            function loadData() {
+                apiService.get(application.config().getApiUrl("Poker/Rooms/"), null,
+                    loadCompleted,
+                    loadFailed);
+            }
 
-            (function (app) {
+            function loadCompleted(result) {
+                $scope.data = result.data;
+                $scope.origmodel = angular.copy(result.data);
+                $scope.loading = false;
+            }
+
+            function loadFailed() {
+                return;
+            }
+
+            loadData();
                 'use strict';
 
                 app.factory('apiService', [
