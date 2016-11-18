@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 using PlaningPokerRnd.Models;
 
 namespace PlaningPokerRnd.Controllers.Api
@@ -41,5 +39,17 @@ namespace PlaningPokerRnd.Controllers.Api
             return retval;
         }
 
+        [HttpPost]
+        public IHttpActionResult StartVoting()
+        {
+            
+            return Ok();
+        }
+
+        [HttpPost]
+        public IHttpActionResult AddUser(UserModel userModel)
+        {
+            return Ok();
+        }
     }
 }
