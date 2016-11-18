@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using System.Web.Http;
 using PlaningPokerRnd.Models;
 
 namespace PlaningPokerRnd.Controllers.Api
@@ -23,5 +18,10 @@ namespace PlaningPokerRnd.Controllers.Api
             return new RoomViewModel();
         }
 
+        [HttpPost]
+        public IHttpActionResult AddUser(UserModel userModel)
+        {
+            return Ok();
+        }
     }
 }
