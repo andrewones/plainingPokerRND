@@ -15,6 +15,7 @@ namespace PlaningPokerRnd.Results
         {
             LoginProvider = loginProvider;
             Request = controller.Request;
+            //asdf
         }
 
         public string LoginProvider { get; set; }
