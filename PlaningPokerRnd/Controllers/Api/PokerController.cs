@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Web.Http;
 using PlaningPokerRnd.Models;
 
 namespace PlaningPokerRnd.Controllers.Api
@@ -9,13 +11,34 @@ namespace PlaningPokerRnd.Controllers.Api
         [HttpGet]
         public MainViewModel Rooms()
         {
-            return new MainViewModel();
+            var retval = new MainViewModel();
+            using (var context = new PokerDbContext())
+            {
+                var rooms =context.Rooms.ToList();
+                foreach (var room in rooms)
+                {
+                    retval.Rooms.Add(new RoomListItemViewModel() {Code =room.Code, Name = room.Name});
+                }
+            }
+            return retval;
         }
 
         [HttpGet]
         public RoomViewModel Rooms(string code)
         {
-            return new RoomViewModel();
+            var retval= new RoomViewModel();
+            using (var context = new PokerDbContext())
+            {
+                var rooms = context.Rooms.Where(x=>x.Code==code).FirstOrDefault();
+                retval.Participants = new List<ParticipantViewModel>();
+                retval.Code = rooms.Code;
+                retval.Name = rooms.Name;
+                foreach (var participant in rooms.Participants)
+                {
+                    retval.Participants.Add(new ParticipantViewModel() {Nick = participant.NickName});
+                }
+            }
+            return retval;
         }
 
         [HttpPost]

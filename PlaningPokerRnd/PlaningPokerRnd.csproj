@@ -186,6 +186,9 @@
     <Compile Include="Controllers\Api\ParticipantController.cs" />
     <Compile Include="Controllers\Api\PokerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="Entities\Participant.cs" />
+    <Compile Include="Entities\Room.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

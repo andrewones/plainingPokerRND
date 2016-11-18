@@ -9,6 +9,8 @@ namespace PlaningPokerRnd.Models
             Participants = new List<ParticipantViewModel>();
         }
 
+        public string Code { get; set; }
+        public string Name { get; set; }
         public List<ParticipantViewModel> Participants { get; set; }
     }
 }
