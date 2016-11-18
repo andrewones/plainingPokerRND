@@ -189,6 +189,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HtmlHelpers.cs" />
     <Compile Include="Models\MainViewModel.cs" />
     <Compile Include="Models\ParticipantViewModel.cs" />
     <Compile Include="Models\RoomListItemViewModel.cs" />
@@ -203,46 +204,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\angular-animate.js" />
-    <Content Include="Scripts\angular-animate.min.js" />
-    <Content Include="Scripts\angular-aria.js" />
-    <Content Include="Scripts\angular-aria.min.js" />
-    <Content Include="Scripts\angular-cookies.js" />
-    <Content Include="Scripts\angular-cookies.min.js" />
-    <Content Include="Scripts\angular-csp.css" />
-    <Content Include="Scripts\angular-loader.js" />
-    <Content Include="Scripts\angular-loader.min.js" />
-    <Content Include="Scripts\angular-message-format.js" />
-    <Content Include="Scripts\angular-message-format.min.js" />
-    <Content Include="Scripts\angular-messages.js" />
-    <Content Include="Scripts\angular-messages.min.js" />
-    <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\angular-parse-ext.js" />
-    <Content Include="Scripts\angular-parse-ext.min.js" />
-    <Content Include="Scripts\angular-resource.js" />
-    <Content Include="Scripts\angular-resource.min.js" />
-    <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
-    <Content Include="Scripts\angular-sanitize.js" />
-    <Content Include="Scripts\angular-sanitize.min.js" />
-    <Content Include="Scripts\angular-scenario.js" />
-    <Content Include="Scripts\angular-touch.js" />
-    <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular.min.js.map" />
-    <Content Include="Scripts\angular-touch.min.js.map" />
-    <Content Include="Scripts\angular-sanitize.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
-    <Content Include="Scripts\angular-resource.min.js.map" />
-    <Content Include="Scripts\angular-parse-ext.min.js.map" />
-    <Content Include="Scripts\angular-messages.min.js.map" />
-    <Content Include="Scripts\angular-message-format.min.js.map" />
-    <Content Include="Scripts\angular-loader.min.js.map" />
-    <Content Include="Scripts\angular-cookies.min.js.map" />
-    <Content Include="Scripts\angular-aria.min.js.map" />
-    <Content Include="Scripts\angular-animate.min.js.map" />
     <Content Include="Content\fonts\roboto\Roboto-Bold.eot" />
     <Content Include="Content\fonts\roboto\Roboto-Bold.ttf" />
     <Content Include="Content\fonts\roboto\Roboto-Bold.woff" />
@@ -1014,6 +981,8 @@
     <Content Include="Scripts\Materialize\materialize.min.js" />
     <Content Include="Scripts\PokerApp\app.js" />
     <Content Include="Scripts\PokerApp\Controllers\planningPokerController.js" />
+    <Content Include="Scripts\PokerApp\Modules\common.core.js" />
+    <Content Include="Scripts\PokerApp\Services\ApiService.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -1033,6 +1002,7 @@
     </Content>
     <Content Include="Scripts\version.json" />
     <Content Include="Scripts\PokerApp\Modules\angular-materialize.min.js" />
+    <Content Include="Views\Shared\_ApplicationData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
